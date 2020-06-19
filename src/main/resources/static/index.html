@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SparkStream</title>
+    <link rel="stylesheet"
+          href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script
+            src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script
+            src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.org/vue/2.2.2/vue.min.js"></script>
+    <script src="https://cdn.staticfile.org/axios/0.18.0/axios.min.js"></script>
+</head>
+<style>
+    .app {
+        border: 2px black solid;
+        margin-top: 100px;
+        height: 500px;
+    }
+
+    .show {
+        border: 1px black solid;
+        height: 65%;
+        margin-top: 5%;
+    }
+
+    .panel {
+        margin-top: 5%;
+        height: 15%;
+    }
+</style>
+<body background="../img/loginbg.jpg">
+<div id="app" class="col-xl-6 offset-xl-3 rounded row app">
+    <div class="col-xl-8 offset-xl-2 panel rounded ">
+        <form>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Novel</span>
+                </div>
+                <input type="text" class="form-control" placeholder="novel" v-model="url">
+                <input type="text" class="form-control" placeholder="word" v-model="key" @keyup="kup">
+                <div class="input-group-append">
+                    <input type="button" class="btn btn-outline-danger" value="Search" @click="load">
+                </div>
+            </div>
+        </form>
+        <div class="alert alert-primary" v-if="isLoad">
+              <span>{{loadInfo}}</span>
+        </div>
+    </div>
+    <div class="col-xl-8 offset-xl-2 show rounded" v-if="isShow">
+        <div class="container">
+            <h5><B>“{{key}}”的相关热词</B></h5>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-danger">{{result}}</li>
+            </ul>
+        </div>
+        <div class="container">
+            <h5><B>可能感兴趣的相关热词</B></h5>
+            <div style="overflow: auto;height: 200px">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-success" v-for="item in list">
+                        "{{item.key}}"出现了{{item.value}}次
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    let vm = new Vue({
+        el: "#app",
+        data: {
+            url: null,
+            key: null,
+            isLoad: false,
+            loadInfo: "正在加载...",
+            isService: false,
+            isShow: false,
+            list: null,
+            result: null,
+
+        },
+        methods: {
+            kup() {
+                this.isShow = false
+            },
+            //发送网址和关键字到后台
+            load() {
+                if (this.url == null || this.key == null)
+                    return
+                if (!this.isService)
+                    return
+                let start = new Date().getTime()
+                this.isShow = false
+                this.loadInfo = "正在加载数据..."
+                this.isLoad = true
+                axios({
+                    url: "/index/load",
+                    method: "post",
+                    params: {
+                        url: this.url,
+                        key: this.key,
+                    }
+                }).then(res => {
+                    let code = res.data.code
+                    if (code != -1) {
+                        this.search(start)
+                    } else {
+                        this.loadInfo = "加载失败,请重试"
+                    }
+                })
+            },
+            search(start) {
+                axios({
+                    url: "/index/search",
+                    method: "post",
+                    params: {
+                        key: this.key,
+                        url: this.url,
+                    }
+                }).then(res => {
+                    let time = (new Date().getTime() - start) / 1000
+                    if (res.data.code == -1) {
+                        this.loadInfo = "加载失败  耗时:" + time + "秒 ,请稍后再试"
+                    } else {
+                        this.loadInfo = "已加载成功 耗时:" + time + "秒"
+                        let hotWord = res.data.hotWord;
+                        this.list = hotWord.list
+                        if (!hotWord.exist) {
+                            this.result = "没有\"" + this.key + "\"的相关信息"
+                        } else {
+                            this.result = "\"" + hotWord.word + "\"出现了" + hotWord.count + "次"
+                        }
+                        this.isShow = true
+                    }
+                })
+            }
+        },
+        mounted() {
+            this.isLoad = true
+            this.loadInfo = "正在启动服务..."
+            axios({
+                url: "/index/start",
+                method: "get"
+            }).then(res => {
+                let code = res.data.code
+                if (code == -1) {
+                    this.loadInfo = "启动服务失败"
+                } else {
+                    this.isService = true
+                    this.isLoad = false
+                }
+            })
+        }
+    })
+</script>
+</html>

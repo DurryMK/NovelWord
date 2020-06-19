@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="52863402-840b-477f-84a1-73fe02a4d45b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Scala Object" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="D:\durry\maven\maven3.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1d8N8b0bQ1J1X2o9No2a71LDRJH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bike" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\durry\scala\SparkStream_NovelWord\src\main\resources\static\img" />
+      <recent name="D:\durry\scala\SparkStream_NovelWord\src\main\resources\static" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="other" />
+      <recent name="app.tools" />
+      <recent name="app.contorller" />
+      <recent name="app.service" />
+      <recent name="app.biz" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\durry\scala\SparkStream_NovelWord\src\main\resources\static\img" />
+      <recent name="D:\durry\scala\SparkStream_NovelWord\src\main\resources\static" />
+      <recent name="D:\durry\scala\SparkStream_NovelWord\src\main\java\app\conf" />
+      <recent name="D:\durry\scala\SparkStream_NovelWord\data" />
+      <recent name="D:\durry\scala\SparkStream_NovelWord\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AppStarter">
+    <configuration name="AppStarter" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.AppStarter" />
+      <module name="SparkStream_NovelWord" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MysqlService" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="app.biz.MysqlService" />
+      <module name="SparkStream_NovelWord" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PythonExecute" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="app.service.PythonExecute" />
+      <module name="SparkStream_NovelWord" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TableNameManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.tools.TableNameManager" />
+      <module name="SparkStream_NovelWord" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.tools.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WordService" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="app.biz.WordService" />
+      <module name="SparkStream_NovelWord" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="app.biz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppStarter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SparkStream_NovelWord" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="app.AppStarter" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.AppStarter" />
+      <item itemvalue="Application.PythonExecute" />
+      <item itemvalue="Application.MysqlService" />
+      <item itemvalue="Application.TableNameManager" />
+      <item itemvalue="Application.WordService" />
+      <item itemvalue="Spring Boot.AppStarter" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PythonExecute" />
+        <item itemvalue="Application.WordService" />
+        <item itemvalue="Application.TableNameManager" />
+        <item itemvalue="Application.MysqlService" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="52863402-840b-477f-84a1-73fe02a4d45b" name="Default Changelist" comment="" />
+      <created>1591802601885</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591802601885</updated>
+      <workItem from="1591802605205" duration="2320000" />
+      <workItem from="1591805507387" duration="38934000" />
+      <workItem from="1591936814539" duration="17656000" />
+      <workItem from="1592044764805" duration="786000" />
+      <workItem from="1592095449789" duration="4246000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1591937926559">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1591937926559" />
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591844426433">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1591844426433" />
+    <state x="574" y="110" key="#com.intellij.ide.util.MemberChooser" timestamp="1591872789425">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="110" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1591872789425" />
+    <state x="428" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1591944014394">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="428" y="337" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1591944014394" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1592096443631">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592096443631" />
+    <state width="1493" height="291" key="GridCell.Tab.0.bottom" timestamp="1592045569669">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="291" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592045569669" />
+    <state width="1493" height="291" key="GridCell.Tab.0.center" timestamp="1592045569669">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="291" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592045569669" />
+    <state width="1493" height="291" key="GridCell.Tab.0.left" timestamp="1592045569669">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="291" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592045569669" />
+    <state width="1493" height="291" key="GridCell.Tab.0.right" timestamp="1592045569669">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="291" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592045569669" />
+    <state x="349" y="74" key="Registry" timestamp="1591843819659">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="74" key="Registry/0.0.1536.824@0.0.1536.824" timestamp="1591843819659" />
+    <state x="270" y="54" key="SettingsEditor" timestamp="1592096445052">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592096445052" />
+    <state x="178" y="107" key="new project wizard" timestamp="1592045558445">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="107" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1592045558445" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1591860883064">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1591860883064" />
+  </component>
+</project>
